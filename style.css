@@ -2,3 +2,97 @@
 .body{
     font-family: 'Work Sans', sans-serif;
 }
+
+
+/* Nav bar Css */
+.header-content{
+    background-color:rgba(255, 144, 14, 0.10);
+  
+}
+.nav-container{
+    display: flex;
+    width: 90rem;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+.nav-container h2{
+    text-align: center;
+    font-size: 2.813rem;
+    font-weight: 700;
+    color: #131313;  
+}
+.nav-container ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+} 
+.nav-container li a{
+    text-decoration: none;
+    margin-right: 40px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    color: #424242;
+}
+/* Banner CSS */
+.banner-container{
+    max-width: 90rem;
+    margin: 0 auto;
+    margin-top: 60px;
+    
+}
+.banner-items{
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+.banner-items h1{
+    font-size: 4rem;
+    font-weight: 700;
+    color: #131313;
+
+}
+.banner-items p{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #727272;
+}
+.banner-items button{
+    border: none;
+    padding: 10px 30px;
+    background-color: #FF900E;
+    border-radius: 8px;
+    margin-top: 20px;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+.banner-items button p{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #fff;
+}
+.banner-img{
+    margin-bottom: 50px;
+    
+}
+.banner-img img{
+    width: 100%;
+}
+
+/* Responsive Style */
+@media screen and (max-width:576px) {
+    .nav-container{
+        flex-direction: column;
+        align-items: flex-start
+    }
+    .nav-container h2 {
+        margin-left: 53px;
+    }
+    .banner-img img{
+        margin-bottom: 50px;
+    }
+    
+}
