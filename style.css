@@ -92,6 +92,8 @@
     justify-content: center;
     gap: 40px;
     margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 .feture-img{
     display: grid;
@@ -123,6 +125,75 @@
     font-weight: 400;
     line-height: 26px;
 }
+/* Self section */
+.self-feture{
+    width: 80%;
+    margin: 0 auto;
+    align-items: center;
+}
+.self-cotainer{
+    display: flex;
+    justify-content: space-between;
+}
+.self-content h3{
+    color: var(--dark-01, #131313);
+    font-size: 2.813rem;
+    border-left: 5px solid #FF900E ;
+    padding-left: 10px;
+}
+.self-content p{
+    color: var(--dark-03, #727272);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+}
+.self-block{
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    width: 90%;
+    padding: 10px;
+    margin-top: 10px;
+}
+.self-block h6{
+    color: var(--dark-01, #131313);
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+.self-block p{
+    color: var(--dark-03, #727272);
+    font-size: 16px;
+    font-weight: 400;
+    /* line-height: 26px; */
+}
+.self-image{
+    margin: 0;
+}
+.self-image img{
+    height: 90%;
+
+}
+.block{
+    background-color: #FF900E;
+    border-radius: 8px;
+    /* padding: 5px; */
+    color: white;
+    text-align: center;
+    width: 342px;
+    position: relative;
+    bottom: 200px;
+}
+.block h3{
+    font-size: 4rem;
+    font-weight: 700;
+}
+.block p{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+
+
 /* Responsive Style */
 /* mobile respo5nsive */
 @media screen and (max-width:576px) {
@@ -142,13 +213,30 @@
 
     }
     /*  feture sectio*/
+    
     .feture{
         flex-direction: column;
+        width: 100%;
     }
     .feture-img{
         grid-template-columns: repeat(1,1fr);
+        /* gap: 5px; */
+        width: 100%;
+        
     }
+    /* Self Feture Section */
+    .self-cotainer{
+        flex-direction: column;
+    }
+    .self-image img{
+        width: 100%;
+        height: auto;
+        margin-top: 10px;
+    }
+
+    
 }
+
 /* Tablate Reponsive */
 @media screen and (min-width: 576px) and (max-width: 992px) {
     .nav-container{
