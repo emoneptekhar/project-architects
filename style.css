@@ -87,7 +87,7 @@
 /* Feture Section */
 .feture{
     width:80%;
-     display: flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     gap: 40px;
@@ -176,12 +176,12 @@
 .block{
     background-color: #FF900E;
     border-radius: 8px;
-    /* padding: 5px; */
     color: white;
     text-align: center;
     width: 342px;
     position: relative;
     bottom: 200px;
+    right: 50px;
 }
 .block h3{
     font-size: 4rem;
@@ -217,6 +217,7 @@
     .feture{
         flex-direction: column;
         width: 100%;
+        text-align: center;
     }
     .feture-img{
         grid-template-columns: repeat(1,1fr);
@@ -233,6 +234,10 @@
         height: auto;
         margin-top: 10px;
     }
+    .block{
+        /* width: 100px; */
+        width: 100%;
+    }
 
     
 }
@@ -242,5 +247,12 @@
     .nav-container{
         flex-direction: column;
         align-items: center;
+    }
+    .feture{
+        flex-direction:column-reverse;
+        text-align: center;
+    }
+    .self-cotainer{
+        flex-direction: column;
     }
 }
