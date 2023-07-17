@@ -133,7 +133,12 @@
 }
 .self-cotainer{
     display: flex;
-    justify-content: space-between;
+    gap: 100px;
+}
+.self-content{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 }
 .self-content h3{
     color: var(--dark-01, #131313);
@@ -151,8 +156,8 @@
     border-radius: 8px;
     background: #FFF;
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
-    width: 90%;
-    padding: 10px;
+    /* width: 90%; */
+    padding: 20px;
     margin-top: 10px;
 }
 .self-block h6{
@@ -168,9 +173,12 @@
 }
 .self-image{
     margin: 0;
+    flex: 1;
 }
 .self-image img{
     height: 90%;
+    width: 100%;
+    object-fit: cover;
 
 }
 .block{
@@ -200,7 +208,7 @@
     /* Nav section and banner */
     .nav-container{
         flex-direction: column;
-        align-items: flex-start
+         
     }S
     .nav-container h2 {
         margin-left: 53px;
@@ -215,7 +223,7 @@
     /*  feture sectio*/
     
     .feture{
-        flex-direction: column;
+        flex-direction: column-reverse;
         width: 100%;
         text-align: center;
     }
@@ -248,11 +256,21 @@
         flex-direction: column;
         align-items: center;
     }
+    /* Feture section */
     .feture{
         flex-direction:column-reverse;
         text-align: center;
     }
+    /* Self Section */
     .self-cotainer{
         flex-direction: column;
+    }
+    .self-content {
+        flex-direction: column;
+
+    }
+    .self-blocks{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
 }
