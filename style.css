@@ -61,7 +61,7 @@
     line-height: 26px;
     color: #727272;
 }
-.banner-items button{
+.btn{
     border: none;
     padding: 10px 30px;
     background-color: #FF900E;
@@ -70,7 +70,7 @@
     cursor: pointer;
     margin-bottom: 50px;
 }
-.banner-items button p{
+.btn p{
     text-align: center;
     font-size: 1.5rem;
     font-weight: 600;
@@ -84,12 +84,53 @@
     width: 100%;
 }
 
+/* Feture Section */
+.feture{
+    width:80%;
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin: 0 auto;
+}
+.feture-img{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+.feture-conten{
+    width: 50%;
+}
+.feture-1{
+    color: var(--dark-03, #727272);
+    font-size: 2.813rem;
+    font-weight: 500;
+
+}
+.feture-2{
+    color: var(--dark-01, #131313);
+    font-size: 2.813rem;
+    font-weight: 700;
+}
+.feture-3{
+    color: #FF900E;
+    font-size: 45px;
+    font-weight: 700;  
+}
+.feture-conten p{
+    color: var(--dark-03, #727272);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+}
 /* Responsive Style */
+/* mobile respo5nsive */
 @media screen and (max-width:576px) {
+    /* Nav section and banner */
     .nav-container{
         flex-direction: column;
         align-items: flex-start
-    }
+    }S
     .nav-container h2 {
         margin-left: 53px;
     }
@@ -100,5 +141,18 @@
         width: 100%;
 
     }
-    
+    /*  feture sectio*/
+    .feture{
+        flex-direction: column;
+    }
+    .feture-img{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+/* Tablate Reponsive */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .nav-container{
+        flex-direction: column;
+        align-items: center;
+    }
 }
